@@ -4,77 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us — Sun Tax Service</title>
-  <meta name="description" content="Contact Sun Tax Service in Ypsilanti, MI. Call (734) 483-5200. Open Mon–Sun from 10 AM, year-round. Personal and business tax prep by certified professionals." />
+  <meta name="description" content="Contact Sun Tax Service in Ypsilanti, MI. Call (734) 483-5200. Open Mon–Sun from 10 AM, year-round." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    /* ── Contact Cards ── */
-    .contact-info-section { padding: 80px 0; background: #0a0a0a; }
-    .contact-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
-      margin-top: 48px;
-    }
-    .contact-card {
-      background: #141414;
-      border: 1px solid #222;
-      border-radius: 16px;
-      padding: 40px 28px;
-      text-align: center;
-      transition: transform 0.3s, border-color 0.3s;
-    }
-    .contact-card:hover {
-      transform: translateY(-6px);
-      border-color: #FFCC33;
-    }
-    .contact-icon { font-size: 2.4rem; margin-bottom: 16px; }
-    .contact-card h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .contact-card p {
-      color: #aaa;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-    .contact-card p em { color: #FFCC33; font-style: normal; font-weight: 600; }
-    .contact-link {
-      color: #FFCC33;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: color 0.2s;
-    }
-    .contact-link:hover { color: #FF6600; }
-
-    /* ── Map ── */
-    .map-section { padding: 80px 0; background: #0d0d0d; }
-    .map-wrapper {
-      margin-top: 40px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid #222;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
-    }
-    .map-wrapper iframe { display: block; }
+    .contact-info-section { padding:80px 0; background:#0a0a0a; }
+    .contact-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:28px; margin-top:48px; }
+    .contact-card { background:#141414; border:1px solid #222; border-radius:16px; padding:40px 28px; text-align:center; transition:transform 0.3s,border-color 0.3s; }
+    .contact-card:hover { transform:translateY(-6px); border-color:#FFCC33; }
+    .contact-icon { font-size:2.4rem; margin-bottom:16px; }
+    .contact-card h3 { font-family:'Montserrat',sans-serif; font-size:1rem; font-weight:700; color:#fff; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.05em; }
+    .contact-card p { color:#aaa; font-size:0.95rem; line-height:1.6; margin-bottom:14px; }
+    .contact-card p em { color:#FFCC33; font-style:normal; font-weight:600; }
+    .contact-link { color:#FFCC33; font-weight:700; text-decoration:none; font-size:1rem; transition:color 0.2s; }
+    .contact-link:hover { color:#FF6600; }
+    .map-section { padding:80px 0; background:#0d0d0d; }
+    .map-section .section-title { color:#fff; }
+    .map-wrapper { margin-top:40px; border-radius:16px; overflow:hidden; border:1px solid #222; box-shadow:0 8px 40px rgba(0,0,0,0.4); }
+    .map-wrapper iframe { display:block; }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="Sun Tax Service" />
-      </a>
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Sun Tax Service" onerror="this.style.display='none'" /></a>
       <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -86,7 +41,6 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="page-hero-inner">
       <h1>Contact <span class="grad-text">Sun Tax Service</span></h1>
@@ -94,111 +48,68 @@
     </div>
   </section>
 
-  <!-- CONTACT CARDS -->
   <section class="contact-info-section fade-in">
     <div class="container">
-      <h2 class="section-title">How to <span class="grad-text">Reach Us</span></h2>
+      <h2 class="section-title" style="color:#fff;">How to <span class="grad-text">Reach Us</span></h2>
       <div class="contact-cards">
-
         <div class="contact-card">
-          <div class="contact-icon">📞</div>
+          <div class="contact-icon">&#128222;</div>
           <h3>Call Us</h3>
           <p>The fastest way to get started</p>
           <a href="tel:7344835200" class="contact-link">(734) 483-5200</a>
         </div>
-
         <div class="contact-card">
-          <div class="contact-icon">📍</div>
+          <div class="contact-icon">&#128205;</div>
           <h3>Visit Us</h3>
           <p>301 W Michigan Ave<br />Suite 300<br />Ypsilanti, MI 48197</p>
-          <a href="https://maps.google.com/?q=301+W+Michigan+Ave+Suite+300+Ypsilanti+MI+48197"
-             target="_blank" rel="noopener" class="contact-link">Get Directions &rarr;</a>
+          <a href="https://maps.google.com/?q=301+W+Michigan+Ave+Suite+300+Ypsilanti+MI+48197" target="_blank" rel="noopener" class="contact-link">Get Directions &rarr;</a>
         </div>
-
         <div class="contact-card">
-          <div class="contact-icon">🕐</div>
+          <div class="contact-icon">&#128336;</div>
           <h3>Hours</h3>
           <p>Monday &ndash; Sunday<br />Open at 10:00 AM<br /><em>Open Year-Round</em></p>
         </div>
-
         <div class="contact-card">
-          <div class="contact-icon">✉️</div>
+          <div class="contact-icon">&#9993;</div>
           <h3>Email Us</h3>
           <p>For general inquiries</p>
           <a href="mailto:shawnagoodloe@gmail.com" class="contact-link">shawnagoodloe@gmail.com</a>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- MAP -->
   <section class="map-section fade-in">
     <div class="container">
       <h2 class="section-title">Find <span class="grad-text">Our Office</span></h2>
       <div class="map-wrapper">
-        <iframe
-          title="Sun Tax Service Location"
-          src="https://maps.google.com/maps?q=301+W+Michigan+Ave+Suite+300+Ypsilanti+MI+48197&output=embed"
-          width="100%"
-          height="450"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe title="Sun Tax Service Location" src="https://maps.google.com/maps?q=301+W+Michigan+Ave+Suite+300+Ypsilanti+MI+48197&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
   <section class="cta-band fade-in">
     <div class="container cta-band-inner">
-      <div>
-        <h2>Ready to Get Started?</h2>
-        <p>Call us today &mdash; we&rsquo;ll handle the rest.</p>
-      </div>
+      <div><h2>Ready to Get Started?</h2><p>Call us today — we'll handle the rest.</p></div>
       <a href="tel:7344835200" class="btn btn-white">Call: (734) 483-5200</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-logo">
-        <img src="images/logo.png" alt="Sun Tax Service" />
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
-      <div class="footer-contact">
-        <p>301 W Michigan Ave, Suite 300, Ypsilanti, MI 48197</p>
-        <p><a href="tel:7344835200">(734) 483-5200</a></p>
-        <p><a href="https://facebook.com/SunTaxService" target="_blank" rel="noopener">Facebook</a></p>
-      </div>
-      <div class="footer-disclaimer">
-        <p>Sun Tax Service LLC is a professional tax preparation firm. We do not provide legal advice. Tax preparation services are provided by trained, certified tax professionals.</p>
-        <p>&copy; 2026 Sun Tax Service LLC. All rights reserved.</p>
-      </div>
+      <div class="footer-logo"><img src="images/logo.png" alt="Sun Tax Service" onerror="this.style.display='none'" /><p class="footer-tagline"><em>It's Different In Here.</em></p><p class="footer-desc">Full-service tax preparation. Accounting degree. 18 years experience. Notary on staff. Open year-round. Serving Ypsilanti, Ann Arbor &amp; nationwide.</p></div>
+      <div class="footer-nav"><strong>Quick Links</strong><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-contact-info"><strong>Contact</strong><a href="tel:7344835200">(734) 483-5200</a><span>301 W Michigan Ave, Suite 300<br />Ypsilanti, MI 48197</span><span>Mon &ndash; Sun: 10:00 AM+ &bull; Year-Round</span><a href="https://facebook.com/SunTaxService" target="_blank" rel="noopener">Facebook</a></div>
     </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><span>&copy; 2026 Sun Tax Service LLC &middot; All Rights Reserved</span><span>Not legal or financial advice. All preparers are IRS registered.</span><a href="privacy.html">Privacy Policy</a></div></div>
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     if (toggle) toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-
-    // Scroll fade-in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.12 });
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), { threshold:0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
-
 </body>
 </html>
