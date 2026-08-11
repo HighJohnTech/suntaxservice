@@ -8,6 +8,57 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Hero overrides for centered no-photo layout */
+    .hero-center {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 110px 24px 100px;
+      text-align: center;
+    }
+    .hero-business-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      font-weight: 900;
+      background: linear-gradient(90deg, #FFCC33, #FF6600, #F44336);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      line-height: 1;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero-tagline-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: #fff;
+      display: block;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+    .hero-center .hero-eyebrow { text-align: center; margin-bottom: 24px; }
+    .hero-center .hero-sub { max-width: 600px; margin: 0 auto 32px; text-align: center; }
+    .hero-center .hero-ctas { justify-content: center; }
+    .hero-center .hero-badges { justify-content: center; margin-top: 28px; }
+    /* Nav brand name */
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 44px; width: auto; object-fit: contain; }
+    .nav-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1.05rem;
+      background: linear-gradient(90deg, #FFCC33, #FF6600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      white-space: nowrap;
+      letter-spacing: -0.01em;
+    }
+  </style>
 </head>
 <body>
 
@@ -15,7 +66,10 @@
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="Images/logo.png" alt="Sun Tax Service" onerror="this.style.display='none'" /></a>
+      <a href="index.html" class="nav-logo">
+        <img src="Images/logo.png" alt="Sun Tax Service" onerror="this.style.display='none'" />
+        <span class="nav-brand">Sun Tax Service</span>
+      </a>
       <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
@@ -27,38 +81,39 @@
     </div>
   </nav>
 
+  <!-- HERO — centered, no photo, big brand name -->
   <section class="hero">
     <div class="hero-bg-glow"></div>
-    <div class="hero-inner">
-      <div class="hero-text">
-        <span class="hero-eyebrow">&#9733; Ypsilanti's Trusted Tax Office</span>
-        <h1 class="hero-headline">It's Different<br /><span class="grad-text">In Here.</span></h1>
-        <p class="hero-sub">18 years of experience. An accounting degree. Notary on staff. A team that treats you like family — not a number. Open year-round so we're here when you need us.</p>
-        <div class="hero-ctas">
-          <a href="tel:7344835200" class="btn btn-primary">Call: (734) 483-5200</a>
-        </div>
-        <div class="hero-badges">
-          <span class="badge">18+ Yrs Experience</span>
-          <span class="badge">4.8&#9733; Google</span>
-          <span class="badge">5-Star BBB</span>
-          <span class="badge">Open Year-Round</span>
-        </div>
+    <div class="hero-center">
+      <span class="hero-eyebrow">&#9733; Ypsilanti's Trusted Tax Office</span>
+      <h1>
+        <span class="hero-business-name">Sun Tax Service</span>
+        <span class="hero-tagline-text">It's Different In Here.</span>
+      </h1>
+      <p class="hero-sub">18 years of experience. An accounting degree. Notary on staff. A team that treats you like family — not a number. Open year-round so we're here when you need us.</p>
+      <div class="hero-ctas">
+        <a href="tel:7344835200" class="btn btn-primary">Call: (734) 483-5200</a>
       </div>
-      <div class="hero-img">
-        <img src="Images/shawna.jpg" alt="Shawna Goodloe, Owner" onerror="this.parentElement.style.display='none'" />
+      <div class="hero-badges">
+        <span class="badge">18+ Yrs Experience</span>
+        <span class="badge">4.8&#9733; Google</span>
+        <span class="badge">5&#9733; Facebook &amp; Yelp</span>
+        <span class="badge">Open Year-Round</span>
       </div>
     </div>
   </section>
 
+  <!-- STATS BAND -->
   <section class="stats-band">
     <div class="container stats-inner">
       <div class="stat-item"><span class="stat-num grad-text">2008</span><span class="stat-label">Founded</span></div>
       <div class="stat-item"><span class="stat-num grad-text">18+</span><span class="stat-label">Yrs Experience</span></div>
       <div class="stat-item"><span class="stat-num grad-text">4.8&#9733;</span><span class="stat-label">Google Rating</span></div>
-      <div class="stat-item"><span class="stat-num grad-text">5&#9733;</span><span class="stat-label">BBB Rating</span></div>
+      <div class="stat-item"><span class="stat-num grad-text">5&#9733;</span><span class="stat-label">Top Reviewed</span></div>
     </div>
   </section>
 
+  <!-- WHY US -->
   <section class="why-us fade-in">
     <div class="container">
       <h2 class="section-title">We don't just prepare your taxes.<br />We prepare <span class="grad-text">you.</span></h2>
@@ -66,12 +121,13 @@
       <div class="why-grid">
         <div class="why-card"><div class="why-icon">&#127891;</div><h3>Accounting Degree</h3><p>Shawna holds a degree in accounting — rare among tax preparers. You're getting a higher level of expertise.</p></div>
         <div class="why-card"><div class="why-icon">&#9749;</div><h3>Tailored Service</h3><p>No cookie-cutter approach. Every return is handled personally, with attention to your unique situation.</p></div>
-        <div class="why-card"><div class="why-icon">&#11088;</div><h3>5-Star Rated</h3><p>4.8 on Google. 5-Star BBB Rating. Our clients speak for us — and they keep coming back.</p></div>
+        <div class="why-card"><div class="why-icon">&#11088;</div><h3>Top Rated</h3><p>4.8&#9733; on Google. 5&#9733; on Facebook. 5&#9733; on Yelp. Our clients keep coming back and sending their family too.</p></div>
         <div class="why-card"><div class="why-icon">&#10002;</div><h3>Notary on Staff</h3><p>Certified notary public available in-office. Get your taxes AND notarization done in one trip.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- SERVICES GRID -->
   <section class="services-section fade-in">
     <div class="container">
       <h2 class="section-title">Everything you need, <span class="grad-text">under one roof.</span></h2>
@@ -80,7 +136,7 @@
         <div class="service-card"><div class="service-icon">&#128101;</div><h3>Personal Tax Returns</h3><p>W-2 employees, retirees, students — accurate returns for individuals at every income level.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
         <div class="service-card"><div class="service-icon">&#127970;</div><h3>Business Tax Returns</h3><p>LLCs, S-Corps, partnerships — handled with the precision your company deserves.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
         <div class="service-card"><div class="service-icon">&#128188;</div><h3>Self-Employed &amp; 1099</h3><p>Freelancers, contractors, gig workers — we maximize deductions and minimize your bill.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
-        <div class="service-card"><div class="service-icon">&#128196;</div><h3>ITIN Applications</h3><p>We prepare and file ITIN applications for individuals who need a tax ID but aren't eligible for an SSN.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
+        <div class="service-card"><div class="service-icon">&#128196;</div><h3>ITIN Applications</h3><p>We prepare and file ITIN applications for those who need a tax ID but aren't eligible for an SSN.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
         <div class="service-card"><div class="service-icon">&#9997;</div><h3>Amended Returns</h3><p>Filed with an error? We'll review and file an amendment to get you what you're owed.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
         <div class="service-card"><div class="service-icon">&#128206;</div><h3>Notary Services</h3><p>Certified notary on staff. Legal documents and more — right here in our office.</p><a href="services.html" class="learn-more">Learn More &rarr;</a></div>
       </div>
@@ -88,6 +144,7 @@
     </div>
   </section>
 
+  <!-- TAX ADVANCES BAND -->
   <section class="advances-band fade-in">
     <div class="container advances-inner">
       <div><h2>Need Your Refund Sooner?</h2><p>Tax advances may be available. Call us to find out if you qualify.</p></div>
@@ -95,10 +152,11 @@
     </div>
   </section>
 
+  <!-- REVIEWS MARQUEE -->
   <section class="reviews-section fade-in">
     <div class="container">
       <h2 class="section-title">Don't take our word for it.</h2>
-      <p class="section-sub">4.8&#9733; on Google &bull; 5&#9733; on Facebook &bull; 5&#9733; on Yelp &bull; 5-Star BBB Rating</p>
+      <p class="section-sub">4.8&#9733; on Google &bull; 5&#9733; on Facebook &bull; 5&#9733; on Yelp</p>
     </div>
     <div class="marquee-wrapper">
       <div class="marquee-track">
@@ -116,6 +174,7 @@
     </div>
   </section>
 
+  <!-- FOUNDER SECTION -->
   <section class="founder-section fade-in">
     <div class="container founder-inner">
       <div class="founder-img-wrap">
@@ -134,6 +193,7 @@
     </div>
   </section>
 
+  <!-- CONTACT BAND -->
   <section class="contact-band fade-in">
     <div class="container">
       <h2>Let's get you <span class="grad-text">taken care of.</span></h2>
