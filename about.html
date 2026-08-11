@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Sun Tax Service</title>
+  <meta name="description" content="Meet Shawna Goodloe and the Sun Tax Service team. 18 years of experience, accounting degree, 5 certified tax professionals in Ypsilanti, MI." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    .story-section { padding: 80px 0; background: #0a0a0a; }
+    .story-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .story-text h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .story-text p { color: #bbb; line-height: 1.8; margin-bottom: 16px; font-size: 1.02rem; }
+    .story-text p em { color: #FFCC33; font-style: italic; }
+    .creds-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .cred-tag {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 50px;
+      padding: 8px 18px;
+      color: #FFCC33;
+      font-size: 0.82rem;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .story-img-wrap {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid #222;
+    }
+    .story-img-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    /* Team */
+    .team-section { padding: 80px 0; background: #0d0d0d; }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .tc {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .tc:hover { transform: translateY(-6px); border-color: #FFCC33; }
+    .tc-photo {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    .tc-placeholder {
+      width: 100%;
+      height: 260px;
+      background: linear-gradient(135deg, #1a0800, #2a1500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+    }
+    .tc-body { padding: 24px; }
+    .tc-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .tc-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #FFCC33;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 12px;
+    }
+    .tc-quote {
+      color: #aaa;
+      font-size: 0.88rem;
+      line-height: 1.65;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .tc-phone {
+      color: #FF6600;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .tc-phone:hover { color: #FFCC33; }
+    @media (max-width: 768px) {
+      .story-inner { grid-template-columns: 1fr; }
+      .story-img-wrap { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Sun Tax Service" onerror="this.style.display='none'" />
+      </a>
+      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:7344835200" class="nav-cta">Call Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="hero-eyebrow">THE PEOPLE BEHIND THE &#9728;</p>
+      <h1>We're Not Your <span class="grad-text">Average Tax Office.</span></h1>
+      <p>And we mean that.</p>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="story-section fade-in">
+    <div class="container story-inner">
+      <div class="story-text">
+        <h2>Our Story</h2>
+        <p>Most tax offices see you as a number. You walk in, hand over your documents, and leave with no idea what actually happened with your money.</p>
+        <p>That's not how we do it here.</p>
+        <p>Sun Tax Service was founded in 2008 by Shawna Goodloe — a trained accounting professional with a degree in accounting and nearly two decades of experience helping real people navigate the tax system. What started in Ypsilanti has grown into a year-round, nationwide service — but the approach has never changed.</p>
+        <p>We serve W-2 employees, small business owners, freelancers, gig workers, and anyone who needs an ITIN or notarization. Every client gets the same thing: personal attention, complete accuracy, and a team that genuinely cares.</p>
+        <p><em>&ldquo;That's why we say: It's Different In Here.&rdquo;</em></p>
+        <div class="creds-list">
+          <span class="cred-tag">&#127891; Accounting Degree</span>
+          <span class="cred-tag">&#128197; Founded 2008</span>
+          <span class="cred-tag">&#11088; 5-Star BBB Rating</span>
+          <span class="cred-tag">&#10002; Notary Public Certified</span>
+          <span class="cred-tag">&#127758; Serving Nationwide</span>
+        </div>
+      </div>
+      <div class="story-img-wrap">
+        <img src="images/shawna.jpg" alt="Shawna Goodloe, Owner of Sun Tax Service"
+             onerror="this.parentElement.style.display='none'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET THE TEAM -->
+  <section class="team-section fade-in">
+    <div class="container">
+      <p class="eyebrow-label">THE TEAM</p>
+      <h2 class="section-title">Meet the <span class="grad-text">Team</span></h2>
+      <p class="section-sub">Five certified professionals. One mission: to serve you right.</p>
+      <div class="team-grid">
+
+        <div class="tc">
+          <img src="images/shawna.jpg" alt="Shawna Goodloe" class="tc-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="tc-placeholder" style="display:none;">&#128100;</div>
+          <div class="tc-body">
+            <div class="tc-name">Shawna Goodloe</div>
+            <div class="tc-title">Owner &middot; Registered Tax Preparer &middot; Notary Public</div>
+            <p class="tc-quote">&ldquo;I find helping people to be a personal outlet. Welcoming you into our office is like welcoming you to our home.&rdquo;</p>
+            <a href="tel:7344835200" class="tc-phone">(734) 483-5200</a>
+          </div>
+        </div>
+
+        <div class="tc">
+          <img src="images/ryan.jpg" alt="Ryan Hollifield" class="tc-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="tc-placeholder" style="display:none;">&#128100;</div>
+          <div class="tc-body">
+            <div class="tc-name">Ryan Hollifield</div>
+            <div class="tc-title">Registered Tax Preparer</div>
+            <p class="tc-quote">&ldquo;There are many ways to get things done, but I pride myself on getting them done right!&rdquo;</p>
+            <a href="tel:3134109303" class="tc-phone">(313) 410-9303</a>
+          </div>
+        </div>
+
+        <div class="tc">
+          <img src="images/anthony.jpg" alt="Anthony Griffin" class="tc-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="tc-placeholder" style="display:none;">&#128100;</div>
+          <div class="tc-body">
+            <div class="tc-name">Anthony Griffin</div>
+            <div class="tc-title">Registered Tax Preparer</div>
+            <p class="tc-quote">&ldquo;There's such a great joy when you are able to deliver great service with professionalism.&rdquo;</p>
+            <a href="tel:7348299244" class="tc-phone">(734) 829-9244</a>
+          </div>
+        </div>
+
+        <div class="tc">
+          <img src="images/lania.jpg" alt="LaNia Maull" class="tc-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="tc-placeholder" style="display:none;">&#128100;</div>
+          <div class="tc-body">
+            <div class="tc-name">LaNia Maull</div>
+            <div class="tc-title">Tax Professional</div>
+            <p class="tc-quote">&ldquo;Every client deserves accuracy, care, and a team that's truly in their corner.&rdquo;</p>
+            <a href="tel:7344507855" class="tc-phone">(734) 450-7855</a>
+          </div>
+        </div>
+
+        <div class="tc">
+          <img src="images/kamaria.jpg" alt="Kamaria Taylor" class="tc-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="tc-placeholder" style="display:none;">&#128100;</div>
+          <div class="tc-body">
+            <div class="tc-name">Kamaria Taylor</div>
+            <div class="tc-title">Registered Tax Preparer</div>
+            <p class="tc-quote">&ldquo;I love being part of a team that puts the client first in everything we do.&rdquo;</p>
+            <a href="tel:3138264787" class="tc-phone">(313) 826-4787</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band fade-in">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Ready to Work With Us?</h2>
+        <p>Call to schedule your appointment. We're here year-round — always.</p>
+      </div>
+      <a href="tel:7344835200" class="btn btn-white">(734) 483-5200</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Sun Tax Service" onerror="this.style.display='none'" />
+        <p class="footer-tagline"><em>It's Different In Here.</em></p>
+        <p class="footer-desc">Full-service tax preparation. Accounting degree. 18 years experience. Notary on staff. Open year-round. Serving Ypsilanti, Ann Arbor &amp; nationwide.</p>
+      </div>
+      <div class="footer-nav">
+        <strong>Quick Links</strong>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-contact-info">
+        <strong>Contact</strong>
+        <a href="tel:7344835200">(734) 483-5200</a>
+        <span>301 W Michigan Ave, Suite 300<br />Ypsilanti, MI 48197</span>
+        <span>Mon &ndash; Sun: 10:00 AM+ &bull; Year-Round</span>
+        <a href="https://facebook.com/SunTaxService" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>&copy; 2026 Sun Tax Service LLC &middot; All Rights Reserved</span>
+        <span>Not legal or financial advice. All preparers are IRS registered.</span>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle) toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
